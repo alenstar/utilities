@@ -105,7 +105,7 @@ struct LazyInstanceState {
 };
 
 #define LAZY_INSTANCE_STATE_INIT  \
-    { ::emugl::internal::LazyInstanceState::STATE_INIT }
+    { ::internal::LazyInstanceState::STATE_INIT }
 
 }  // namespace internal
 

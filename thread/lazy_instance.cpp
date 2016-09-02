@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "emugl/common/lazy_instance.h"
+#include "lazy_instance.h"
 
 #ifdef _WIN32
 #  define WIN32_LEAN_AND_MEAN 1
@@ -21,7 +21,6 @@
 #  include <sched.h>
 #endif
 
-namespace emugl {
 namespace internal {
 
 typedef LazyInstanceState::AtomicType AtomicType;
@@ -97,5 +96,3 @@ void LazyInstanceState::doneConstructing() {
     storeRelease(&mState, STATE_DONE);
 }
 
-}  // namespace internal
-}  // namespace emugl
