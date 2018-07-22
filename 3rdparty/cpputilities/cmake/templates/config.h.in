@@ -1,0 +1,26 @@
+// Created via CMake from template config.h.in
+// WARNING! Any changes to this file will be overwritten by the next CMake run!
+
+#ifndef @META_PROJECT_VARNAME_UPPER@_CONFIG
+#define @META_PROJECT_VARNAME_UPPER@_CONFIG
+
+#define PROJECT_NAME "@META_PROJECT_NAME@"
+#define PROJECT_LICENSE "@META_PROJECT_LICENSE@"
+#define APP_NAME "@META_APP_NAME@"
+#define APP_VERSION "@META_APP_VERSION@"
+#define APP_AUTHOR "@META_APP_AUTHOR@"
+#define APP_URL "@META_APP_URL@"
+#define APP_DESCRIPTION "@META_APP_DESCRIPTION@"
+#define APP_INSTALL_PREFIX "@CMAKE_INSTALL_PREFIX@"
+#define DEPENCENCY_VERSIONS {@DEPENCENCY_VERSIONS_ARRAY@}
+#define STATIC_DEPENCENCY_VERSIONS {@STATIC_DEPENCENCY_VERSIONS_ARRAY@}
+
+// include qtconfig.h for backward compatibility
+// FIXME: remove this in v5
+#cmakedefine QT_CONFIGURED
+#ifdef QT_CONFIGURED
+#include "./qtconfig.h"
+#endif
+
+@META_CUSTOM_CONFIG@
+#endif // @META_PROJECT_VARNAME_UPPER@_CONFIG

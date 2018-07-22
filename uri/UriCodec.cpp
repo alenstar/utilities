@@ -6,6 +6,8 @@
 
 #include <string>
 #include <assert.h>
+#include "UriCodec.h"
+namespace Common {
 
 const char HEX2DEC[256] = 
 {
@@ -175,3 +177,4 @@ UriCodecTest::UriCodecTest()
 // Test codes end
 //////////////////////////////////////////////////////////////
 
+}

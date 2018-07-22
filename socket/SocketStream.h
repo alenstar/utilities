@@ -17,9 +17,8 @@
 #define __SOCKET_STREAM_H
 
 #include <stdlib.h>
-#include "IOStream.h"
 
-class SocketStream : public IOStream {
+class SocketStream {
 public:
     typedef enum { ERR_INVALID_SOCKET = -1000 } SocketStreamError;
     static const size_t MAX_ADDRSTR_LEN = 256;

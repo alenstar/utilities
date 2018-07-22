@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 
-namespace uri {
+namespace Common {
     struct uri {
         std::string protocol, user, password, host, path, search;
         int port;
